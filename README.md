@@ -1,10 +1,14 @@
-## OFFICIAL LEARNING REPOSITORY FOR THE GENAI TRACK: HONRATECH BOOTCAMP
+## GENAI TRACK LEARNING REPO: HONRATECH BOOTCAMP
 
-### Getting Started
+### Setup
 
-- Create your [fork](https://github.com/mokenyu/learning-genai-honratech/fork)
-- Clone the repo.
-- Create new remote called `upstream` to handle syncing with the forked repo.
+ - Create your [fork](https://github.com/mokenyu/learning-genai-honratech/fork)
+ - Clone the repo and enter folder.
+    ```
+    git clone your_fork_repo_link
+    cd fork_clone_folder
+    ```
+ - Create new remote called `upstream` to handle syncing with the forked repo.
     ```
     git remote add upstream https://github.com/mokenyu/learning-genai-honratech
     ```
@@ -19,19 +23,20 @@
     git checkout -b branch_with_your_name
     ```
 
-
-### Environment Setup
-
-Run the following commands from project root in your teminal:
-
-- Create virtual environment using `uv`.
+ - Create virtual environment using `uv` and activate.
     ```
     uv venv
+    .venv\Scripts\activate
     ```
 
-- Install dependencies and equip environment.
+ - Install dependencies and equip environment.
     ```
     uv sync
+    ```
+
+ - Create `.env` from `.env.example`.
+    ```
+    cp .env.example .env
     ```
 
  - Create a folder with your name in root.
